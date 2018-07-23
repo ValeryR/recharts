@@ -390,6 +390,14 @@ class Treemap extends Component {
     return this.renderNode(formatRoot, formatRoot, 0);
   }
 
+  squarify() {
+    return squarify.apply(this, arguments);
+  }
+
+  computeNode() {
+    return computeNode.apply(this, arguments);
+  }
+
   renderTooltip() {
     const { children, nameKey } = this.props;
     const tooltipItem = findChildByType(children, Tooltip);
